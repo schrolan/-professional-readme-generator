@@ -19,7 +19,7 @@ const questions = [
 },
 {
     type: "input",
-    name: "table of contents",
+    name: "table_of_contents",
     message: "Please write a table of contents:",
     default: "A table of contents goes here."
 },
@@ -31,7 +31,7 @@ const questions = [
 },
 {
     type: "input",
-    name: "usage information",
+    name: "usage_information",
     message: "Please write your usage information here:",
     default: "Usage information goes here."
 },
@@ -40,7 +40,7 @@ const questions = [
     name: "licenses",
     message: "Which license fits your project?",
     default: "Apache 2.0 License",
-    choices: ["Apache 2.0 License", "Boost Software License 1.0", "CC0", "Eclipse Public License 1.0", "GNU GPL v3", "The Hippocratic License 2.1", "IBM Public License Version 1.0", "The MIT License", "Mozilla Public License 2.0", "Open Database License (ODbL)", "The Artistic License 2.0", "SIL Open Font License 1.1", "The Unlicense", "The zlib/libpng License"]
+    choices: ["Apache 2.0 License", "Boost Software License 1.0", "CC0", "Eclipse Public License 1.0", "GNU GPL v3"]
 },
 {
     type: "input",
@@ -62,7 +62,7 @@ const questions = [
 },
 {
     type: "input",
-    name: "usage information",
+    name: "email",
     message: "Please write the email associated with your github here:",
     default: "Github associated email goes here."
 },
@@ -81,7 +81,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(JSON.stringify(data, null, " "));
-        data.getLicense = getLicense(data.license);
         writeToFile("./example/README.md", data);
     });
 }
