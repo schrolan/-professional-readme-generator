@@ -1,4 +1,8 @@
   # My README.
+
+  
+  ![badge](https://img.shields.io/badge/license-undefined-blue)
+    
   
   # Your description goes here.
   
@@ -8,7 +12,7 @@
   
   # Usage information goes here.
   
-  # Apache 2.0 License
+  # agpl
   
   # Contribution information goes here.
   
@@ -17,3 +21,11 @@
   # Username information goes here.
   
   # Github associated email goes here.
+  
+  
+    ## [License](#table-of-contents)
+    The application is covered under the following license:
+    
+    [undefined](https://choosealicense.com/licenses/undefined)
+      
+      

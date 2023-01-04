@@ -39,8 +39,8 @@ const questions = [
     type: "list",
     name: "licenses",
     message: "Which license fits your project?",
-    default: "Apache 2.0 License",
-    choices: ["Apache 2.0 License", "Boost Software License 1.0", "CC0", "Eclipse Public License 1.0", "GNU GPL v3"]
+    default: "agpl",
+    choices: ['agpl', 'apache', 'mit', 'no license']
 },
 {
     type: "input",
