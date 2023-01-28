@@ -2,6 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'no license') {
+    console.log(license)
     return `
   ![badge](https://img.shields.io/badge/license-${license}-blue)
     `;
@@ -38,19 +39,32 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  console.log(data)
+
   return `  # ${data.title}
 
+
+  ## Licensing:
   ${renderLicenseBadge(data.license)}
   
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage_information)
+  - [License](#license)
+  - [Contribution](#contribution)
+  - [Testing](#tests)
+  - [Username](#username)
+  - [Email](#email)
+
+
   # ${data.description}
-  
-  # ${data.table_of_contents}
   
   # ${data.installation}
   
   # ${data.usage_information}
   
-  # ${data.licenses}
+  # ${data.license}
   
   # ${data.contribution}
   

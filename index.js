@@ -19,12 +19,6 @@ const questions = [
 },
 {
     type: "input",
-    name: "table_of_contents",
-    message: "Please write a table of contents:",
-    default: "A table of contents goes here."
-},
-{
-    type: "input",
     name: "installation",
     message: "Please put the steps for installation here:",
     default: "Installation steps goes here."
@@ -37,7 +31,7 @@ const questions = [
 },
 {
     type: "list",
-    name: "licenses",
+    name: "license",
     message: "Which license fits your project?",
     default: "agpl",
     choices: ['agpl', 'apache', 'mit', 'no license']
